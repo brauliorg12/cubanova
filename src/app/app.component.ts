@@ -19,7 +19,7 @@ import { find, pull } from 'lodash';
   ],
 })
 export class AppComponent {
-  title = 'tecnicocercachina';
+  title = 'cubanova';
 
   public element = false;
 
