@@ -1,9 +1,32 @@
 .img_logo {
   height: 100px;
+  transition: 500ms;
 }
 
+.sticky .img_logo {
+  height: 60px;
+  transition: 500ms;
+}
 @media (max-width: 800px) {
   .img_logo {
     height: 50px;
   }
+
+  .sticky .img_logo {
+    height: 50px;
+    transition: 500ms;
+  }
+
+  .team-style-eleven .team-image img {
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+.footer-logo img {
+  height: 150px;
+}
+
+.pointer {
+  cursor: pointer;
 }
