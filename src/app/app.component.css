@@ -1,0 +1,162 @@
+#myBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+.tecnicocercalogo {
+  width: 100%;
+  height: 80px;
+}
+
+#myBtn:hover {
+  background-color: #ee000052;
+}
+
+.spinner_input {
+  width: 15px;
+  height: 15px;
+}
+
+span {
+  color: #00000052;
+  margin-left: 0px !important;
+}
+
+.span_divider {
+  height: 80px;
+  display: block;
+}
+
+.add-title {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.other_t {
+  font-size: 12px;
+  color: #797979 !important;
+}
+
+.col_rifa_databanco {
+  justify-content: center;
+  display: grid;
+}
+
+.form-wrap {
+  border: 1px solid #dee2e6 !important;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.border-bottom {
+  border: none !important;
+}
+
+.c-info {
+  font-size: 16px;
+}
+
+.c-text {
+  font-size: 15px;
+  font-weight: bold !important;
+}
+
+.img_pago {
+  width: 80px;
+  height: 80px;
+}
+
+.log_pago {
+  text-align: center;
+}
+
+.participar_t {
+  color: #ee0000 !important;
+  font-weight: bold;
+  border: 1px solid #ee0000 !important;
+  border-radius: 5px;
+}
+
+.span_adds {
+  display: block;
+  margin-top: 2rem;
+}
+
+/* .borde_rifa {
+  padding: 1rem;
+  border: 1px solid #ee0000 !important;
+  margin: 5px !important;
+  border-radius: 15px;
+} */
+
+._label {
+  font-size: 16px !important;
+}
+
+.email_label {
+  padding-top: 2rem;
+}
+
+.participar_div {
+  min-height: 150px;
+  display: grid;
+  align-content: end;
+}
+
+.editor-tag {
+  cursor: text;
+  font-size: 16px;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+  background: white;
+  /*border: 1px #1a1a1a solid;*/
+}
+
+.number_t {
+  margin-top: -10px !important;
+  display: block;
+}
+
+.tag-item {
+  line-height: 34px;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 20px !important;
+  font-weight: bold;
+  display: inline-block;
+  border: 2px #929292 solid;
+  /* background: #e0a800; */
+  padding-left: 5px;
+  margin: 1rem;
+  /*  color: #fafafa !important; */
+}
+
+.p_modal {
+  text-align: left;
+}
+
+.remove-tag {
+  padding-right: 5px;
+  cursor: pointer;
+  color: #929292 !important;
+}
+
+.tag-item:not(:first-child) {
+  margin-left: 5px;
+}
+
+.input-tag {
+  margin: 0;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
