@@ -30,3 +30,7 @@
 .pointer {
   cursor: pointer;
 }
+
+.carousel-item {
+  height: 100vh !important;
+}
