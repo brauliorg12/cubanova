@@ -124,7 +124,7 @@ p {
 
 /*===== All Section Title Style =====*/
 .section-title .title {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
   color: #121212;
   line-height: 55px;
@@ -3242,7 +3242,7 @@ p {
 }
 
 .carousel-indicators {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .carousel-indicators li {
   display: block;
@@ -3357,7 +3357,7 @@ p {
   min-height: 284px;
 }
 .single-features .features-title-icon .features-title a {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 45px;
   color: #121212;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3375,13 +3375,13 @@ p {
 }
 @media (max-width: 767px) {
   .single-features .features-title-icon .features-title a {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 35px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .single-features .features-title-icon .features-title a {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 45px;
   }
 }
@@ -3513,7 +3513,12 @@ p {
   -ms-transition: all 0.5s ease-out 0s;
   -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.911); */
+
+  background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+  background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+  background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%);
+
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -3521,8 +3526,10 @@ p {
   transform: scale(0.9);
   border-radius: 8px;
 }
+
 .single-portfolio .portfolio-image .portfolio-overlay .portfolio-content {
   padding: 16px;
+  filter: blur(0px);
 }
 .single-portfolio
   .portfolio-image
@@ -3540,7 +3547,7 @@ p {
   .portfolio-icon
   a {
   font-size: 48px;
-  color: #0067f4;
+  color: #fff;
   position: relative;
   z-index: 5;
   line-height: 50px;
