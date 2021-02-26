@@ -3348,7 +3348,7 @@ p {
 .features-area {
   background-color: #f4f6f7;
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 180px;
 }
 
 .single-features {
@@ -3421,8 +3421,8 @@ p {
       18.PORTFOLIO css 
 ===========================*/
 .portfolio-area {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 90px;
+  padding-bottom: 150px;
 }
 
 .portfolio-menu ul li {
