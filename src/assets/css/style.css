@@ -3524,12 +3524,12 @@ p {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
   transform: scale(0.9);
-  border-radius: 8px;
+  border-radius: 15px;
+  border: 5px solid #fff;
 }
 
 .single-portfolio .portfolio-image .portfolio-overlay .portfolio-content {
   padding: 16px;
-  filter: blur(0px);
 }
 .single-portfolio
   .portfolio-image
