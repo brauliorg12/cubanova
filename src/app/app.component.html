@@ -26,7 +26,7 @@
                 <nav class="navbar navbar-expand-lg">
 
                     <a class="navbar-brand page-scroll" href="#home">
-                        <img src="assets/images/001.png" alt="Logo" class="img_logo">
+                        <img src="assets/images/001.png" alt="Logo CubaNova" class="img_logo">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo"
@@ -42,7 +42,7 @@
                             <li class="nav-item"><a class="page-scroll" href="#services">Servicios</a></li>
                             <li class="nav-item"><a class="page-scroll" href="#portfolio">Portfolio</a></li>
                             <!-- <li class="nav-item"><a class="page-scroll" href="#pricing">Pricing</a></li> -->
-                            <li class="nav-item"><a class="page-scroll" href="#team">Trabajos Realizados</a></li>
+                            <!-- <li class="nav-item"><a class="page-scroll" href="#team">Trabajos Realizados</a></li> -->
                             <!-- <li class="nav-item"><a class="page-scroll" href="#team">Team</a></li> -->
                             <li class="nav-item"><a class="page-scroll" href="#contact">Contacto</a></li>
                         </ul>
@@ -88,7 +88,7 @@
                         </div>
                     </div> <!-- row -->
                 </div> <!-- container -->
-                <div class="slider-image-box d-none d-lg-flex align-items-end">
+                <div class="slider-image-box d-lg-flex align-items-end">
                     <div class="slider-image">
                         <img src="assets/images/slider/1.png" alt="Hero">
                     </div> <!-- slider-imgae -->
@@ -112,7 +112,7 @@
                         </div>
                     </div> <!-- row -->
                 </div> <!-- container -->
-                <div class="slider-image-box d-none d-lg-flex align-items-end">
+                <div class="slider-image-box d-lg-flex align-items-end">
                     <div class="slider-image">
                         <img src="assets/images/slider/2.png" alt="Hero">
                     </div> <!-- slider-imgae -->
@@ -136,7 +136,7 @@
                         </div>
                     </div> <!-- row -->
                 </div> <!-- container -->
-                <div class="slider-image-box d-none d-lg-flex align-items-end">
+                <div class="slider-image-box d-lg-flex align-items-end">
                     <div class="slider-image">
                         <img src="assets/images/slider/3.png" alt="Hero">
                     </div> <!-- slider-imgae -->
@@ -224,7 +224,7 @@
 
 <!--====== PORTFOLIO PART START ======-->
 
-<section id="portfolio" class="team-area pt-120 pb-130">
+<section id="portfolio" class="team-area pt-80 pb-20">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-10">
@@ -434,11 +434,16 @@
                                         <div class="portfolio-icon">
                                             <a class="image-popup" href="assets/images/portfolio/codi_full.jpg"><i
                                                     class="lni lni-zoom-in"></i></a>
-                                            <img src="assets/images/portfolio/shape.svg" alt="Codi - Comunidad Digital" class="shape">
+                                            <p class="text-center text-primary"><b>Ver</b></p>
+                                            <img src="assets/images/portfolio/shape.svg" alt="Codi - Comunidad Digital"
+                                                class="shape">
                                         </div>
                                         <div class="portfolio-icon">
-                                            <a href="https://codiapp.com.ar" target="_blank"><i class="lni lni-link"></i></a>
-                                            <img src="assets/images/portfolio/shape.svg" alt="Codi - Comunidad Digital" class="shape">
+                                            <a href="https://codiapp.com.ar" target="_blank"><i
+                                                    class="lni lni-link"></i></a>
+                                            <p class="text-center text-primary"><b>Visitar</b></p>
+                                            <img src="assets/images/portfolio/shape.svg" alt="Codi - Comunidad Digital"
+                                                class="shape">
                                         </div>
                                     </div>
                                 </div>
@@ -448,17 +453,23 @@
                     <div class="col-lg-4 col-sm-6 marketing-4 research-4">
                         <div class="single-portfolio">
                             <div class="portfolio-image">
-                                <img src="assets/images/portfolio/2.png" alt="">
+                                <img src="assets/images/portfolio/ofertacerca_small.png" alt="">
                                 <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                     <div class="portfolio-content">
                                         <div class="portfolio-icon">
-                                            <a class="image-popup" href="assets/images/portfolio/2.png"><i
+                                            <a class="image-popup"
+                                                href="assets/images/portfolio/ofertacerca_full.png"><i
                                                     class="lni lni-zoom-in"></i></a>
-                                            <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                            <p class="text-center text-primary"><b>Ver</b></p>
+                                            <img src="assets/images/portfolio/shape.svg" alt="Ofertacerca"
+                                                class="shape">
                                         </div>
                                         <div class="portfolio-icon">
-                                            <a href="#"><i class="lni lni-link"></i></a>
-                                            <img src="assets/images/portfolio/shape.svg" alt="shape" class="shape">
+                                            <a href="https://ofertacerca.com" target="_blank"><i
+                                                    class="lni lni-link"></i></a>
+                                            <p class="text-center text-primary"><b>Visitar</b></p>
+                                            <img src="assets/images/portfolio/shape.svg" alt="Ofertacerca"
+                                                class="shape">
                                         </div>
                                     </div>
                                 </div>
@@ -677,51 +688,6 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- contact info -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="contact-wrapper form-style-two pt-115">
-                    <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Deja <span>tu mensaje.</span></h4>
-
-                    <form id="contact-form" action="assets/contact.php" method="post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-input mt-25">
-                                    <label>Nombre</label>
-                                    <div class="input-items default">
-                                        <input name="name" type="text" placeholder="tu nombre">
-                                        <i class="lni lni-user"></i>
-                                    </div>
-                                </div> <!-- form input -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-input mt-25">
-                                    <label>Email</label>
-                                    <div class="input-items default">
-                                        <input type="email" name="email" placeholder="tu email">
-                                        <i class="lni lni-envelope"></i>
-                                    </div>
-                                </div> <!-- form input -->
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-input mt-25">
-                                    <label>Mensaje</label>
-                                    <div class="input-items default">
-                                        <textarea name="massage" placeholder="Texto del mensaje"></textarea>
-                                        <i class="lni lni-pencil-alt"></i>
-                                    </div>
-                                </div> <!-- form input -->
-                            </div>
-                            <p class="form-message"></p>
-                            <div class="col-md-12">
-                                <div class="form-input light-rounded-buttons mt-30">
-                                    <button class="main-btn light-rounded-two">Enviar Mensaje</button>
-                                </div> <!-- form input -->
-                            </div>
-                        </div> <!-- row -->
-                    </form>
-                </div> <!-- contact wrapper form -->
-            </div>
-        </div> <!-- row -->
     </div> <!-- container -->
 </section>
 

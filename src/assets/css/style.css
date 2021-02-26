@@ -3160,7 +3160,7 @@ p {
 }
 .carousel-item .slider-image-box {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   width: 50%;
   height: 100%;
@@ -3283,7 +3283,7 @@ p {
 
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next {
-  top: 50%;
+  top: 85%;
   font-size: 32px;
   color: #fff;
   bottom: auto;
@@ -3347,8 +3347,8 @@ p {
 /*===== features TWO =====*/
 .features-area {
   background-color: #f4f6f7;
-  padding-top: 120px;
-  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .single-features {
@@ -3421,8 +3421,8 @@ p {
       18.PORTFOLIO css 
 ===========================*/
 .portfolio-area {
-  padding-top: 120px;
-  padding-bottom: 130px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .portfolio-menu ul li {
@@ -3565,8 +3565,8 @@ p {
 ===========================*/
 .pricing-area {
   background-color: #f4f6f7;
-  padding-top: 120px;
-  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 /*===== PRICING STYLE NINE =====*/
@@ -3664,7 +3664,7 @@ p {
 ===========================*/
 .about-area {
   padding-top: 80px;
-  padding-bottom: 130px;
+  padding-bottom: 100px;
   position: relative;
 }
 .about-area .about-title .sub-title {
@@ -3748,7 +3748,7 @@ p {
 /*===== TESTIMONIAL STYLE THREE =====*/
 .testimonial-area {
   padding-top: 80px;
-  padding-bottom: 130px;
+  padding-bottom: 100px;
   background-color: #f4f6f7;
 }
 .testimonial-area .testimonial-left-content .sub-title {
@@ -4091,8 +4091,8 @@ p {
       19.CONTACT css 
 ===========================*/
 .contact-area {
-  padding-top: 120px;
-  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-bottom: 100px;
   background-color: #f4f6f7;
 }
 
