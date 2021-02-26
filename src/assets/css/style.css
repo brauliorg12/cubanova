@@ -3967,6 +3967,8 @@ p {
 }
 .team-style-eleven .team-image img {
   width: 100%;
+  max-height: 400px;
+  object-fit: contain;
 }
 .team-style-eleven .team-content {
   position: absolute;
