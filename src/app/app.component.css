@@ -8,6 +8,20 @@
   transition: 500ms;
 }
 
+.progress {
+  overflow: visible;
+  margin-bottom: 26px;
+  height: 15px;
+}
+
+.title_skills {
+  font-size: 20px;
+}
+
+.title_skill {
+  padding-bottom: 0.2rem;
+}
+
 @media (max-width: 990px) {
   .carousel-item .slider-image-box {
     position: absolute;
