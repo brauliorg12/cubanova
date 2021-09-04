@@ -3987,6 +3987,7 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   opacity: 0;
+  border-radius: 0 0 50px 50px;
 }
 .team-style-eleven .team-content .team-social {
   position: absolute;
