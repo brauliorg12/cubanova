@@ -1,4 +1,10 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -11,7 +17,7 @@ import { Component } from '@angular/core';
       state('*', style({ opacity: 0.6 })),
       transition(':enter', animate('800ms ease-out')),
       transition(':leave', animate('100ms ease-in')),
-    ])
+    ]),
   ],
 })
 export class AppComponent {
@@ -27,10 +33,8 @@ export class AppComponent {
     const sc = event.target.scrollingElement.scrollTop;
     if (sc >= 300) {
       this.element = true;
-    }
-    else {
+    } else {
       this.element = false;
     }
-  }
-
+  };
 }

@@ -5,15 +5,9 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, HttpClientModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
