@@ -15,10 +15,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "assets/images/001.png");
+            $(".navbar-area img").attr("src", "assets/images/logo_web_cubanova.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar-area img").attr("src", "assets/images/001.png");
+            $(".navbar-area img").attr("src", "assets/images/logo_web_cubanova.png");
         }
     });
 
