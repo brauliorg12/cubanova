@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #121212;
@@ -43,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #121212;
   margin: 0px;
@@ -81,7 +82,7 @@ ol {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #121212;
@@ -115,8 +116,8 @@ p {
   }
 }
 .section-title .text {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 24px;
   color: #6c6c6c;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -2936,7 +2937,7 @@ p {
 }
 .navbar-area .navbar .navbar-nav .nav-item a::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 32px;
   height: 4px;
   background: -webkit-linear-gradient(
@@ -3094,7 +3095,7 @@ p {
 }
 .carousel-item::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 33%;
   height: 100%;
   background: -webkit-linear-gradient(
@@ -3189,8 +3190,8 @@ p {
 }
 .slider-content .text {
   color: #fff;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
   margin-top: 18px;
 }
 .slider-content .slider-btn {
@@ -3443,7 +3444,7 @@ p {
 }
 .portfolio-menu ul li::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -3708,8 +3709,11 @@ p {
   }
 }
 .about-area .about-accordion .accordion .card .card-header a::before {
-  content: "\ea58";
-  font-family: "LineIcons";
+  content: '\ea58';
+  font-family: 'LineIcons';
+  src: local('LineIcons'), local('LineIcons'),
+    url(../../assets/fonts/LineIcons.woff) format('woff2');
+  font-display: swap;
   position: absolute;
   top: 50%;
   right: 0;
@@ -3720,7 +3724,7 @@ p {
   transform: translateY(-50%);
 }
 .about-area .about-accordion .accordion .card .card-header .collapsed::before {
-  content: "\ea5c";
+  content: '\ea5c';
 }
 .about-area .about-accordion .accordion .card .card-body {
   padding: 20px 20px 0;
@@ -3947,7 +3951,7 @@ p {
 }
 .team-style-eleven .team-image img {
   width: 100%;
-  max-height: 400px;
+  max-height: 395px;
   object-fit: contain;
 }
 .team-style-eleven .team-content {
@@ -3973,7 +3977,7 @@ p {
 }
 .team-style-eleven .team-content::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   top: 0;
