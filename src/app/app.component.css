@@ -3,6 +3,10 @@
   transition: 500ms;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .sticky .img_logo {
   height: 60px;
   transition: 500ms;
