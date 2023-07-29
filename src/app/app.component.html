@@ -47,7 +47,7 @@
           </button>
 
           <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
-            <ul class="navbar-nav m-auto">
+            <ul id="nav" class="navbar-nav m-auto">
               <li class="nav-item">
                 <a href="#home">Inicio</a>
               </li>
@@ -84,7 +84,12 @@
   id="top"
 >
   <section id="home" class="slider_area">
-    <div id="carouselThree" class="carousel slide" data-bs-ride="true">
+    <div
+      id="carouselThree"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-touch="true"
+    >
       <ol class="carousel-indicators">
         <li
           data-bs-target="#carouselThree"
@@ -114,7 +119,7 @@
             <div class="slider-image">
               <img
                 src="assets/images/slider/1.webp"
-                alt="Emprendimiento"
+                alt="Creatividad"
                 width="auto"
                 height="auto"
               />
@@ -142,7 +147,7 @@
             <div class="slider-image">
               <img
                 src="assets/images/slider/2.webp"
-                alt="Productividad"
+                alt="Emprendimiento"
                 width="auto"
                 height="auto"
               />
@@ -178,6 +183,7 @@
         </div>
       </div>
 
+      <!-- BOTONES -->
       <a
         class="carousel-control-prev"
         href="#carouselThree"
@@ -208,12 +214,12 @@
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10">
           <div class="section-title text-center pb-10">
-            <h3 class="title">Nuestros Servicios</h3>
+            <label class="title">Nuestros Servicios</label>
             <br />
-            <h5 class="sub-title text-primary">
+            <p class="sub-title text-primary">
               Desarrollamos software para cualquier tipo de empresa y
               garantizamos resultados satisfactórios para nuestros clientes.
-            </h5>
+            </p>
           </div>
         </div>
       </div>
@@ -221,11 +227,12 @@
         <div class="col-lg-4 col-md-7 col-sm-9">
           <div class="single-features mt-40">
             <div class="features-title-icon d-flex justify-content-between">
-              <h4 class="features-title">
-                <h4 (click)="scrollPoint('works')" class="pointer">
-                  Digitalizar tu Negocio
-                </h4>
-              </h4>
+              <p
+                (click)="scrollPoint('works')"
+                class="features-title pointer text-bold"
+              >
+                Digitalizar tu Negocio
+              </p>
               <div class="features-icon">
                 <i class="lni lni-stats-up"></i>
                 <img
@@ -248,11 +255,12 @@
         <div class="col-lg-4 col-md-7 col-sm-9">
           <div class="single-features mt-40">
             <div class="features-title-icon d-flex justify-content-between">
-              <h4 class="features-title">
-                <h4 (click)="scrollPoint('works')" class="pointer">
-                  Aplicaciones y Páginas Webs
-                </h4>
-              </h4>
+              <p
+                (click)="scrollPoint('works')"
+                class="features-title pointer text-bold"
+              >
+                Aplicaciones y Páginas Webs
+              </p>
               <div class="features-icon">
                 <i class="lni lni-layout"></i>
                 <img
@@ -275,9 +283,12 @@
         <div class="col-lg-4 col-md-7 col-sm-9">
           <div class="single-features mt-40">
             <div class="features-title-icon d-flex justify-content-between">
-              <h4 class="features-title">
-                <h4 (click)="scrollPoint('works')" class="pointer">SEO</h4>
-              </h4>
+              <p
+                (click)="scrollPoint('works')"
+                class="features-title pointer text-bold"
+              >
+                SEO
+              </p>
               <div class="features-icon">
                 <i class="lni lni-seo"></i>
                 <img
@@ -308,14 +319,14 @@
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10">
           <div class="section-title text-center pb-10">
-            <h3 class="title">Trabajos Realizados</h3>
+            <label class="title">Trabajos Realizados</label>
             <p class="text">Últimos trabajos (hasta 2021).</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-3">
-          <div class="portfolio-menu text-center mt-50">
+          <div class="portfolio-menu text-center mt-50 mb-40">
             <ul>
               <li data-filter="*" class="active">ÚLTIMOS</li>
               <li data-filter=".branding-4">TERMINADOS</li>
@@ -802,7 +813,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10">
           <div class="section-title text-center pb-30">
-            <h3 class="title">Portfolio</h3>
+            <label class="title">Portfolio</label>
           </div>
         </div>
       </div>
@@ -878,7 +889,8 @@
                 </li> -->
                 </ul>
               </div>
-              <h4 class="team-name"><p>Braulio Rodriguez</p></h4>
+              <span class="team-name"><p>Braulio Rodriguez</p></span>
+              <br />
               <span class="sub-title">Desarrollador SSR</span>
             </div>
           </div>
@@ -894,13 +906,13 @@
           </div>
 
           <div data-aos="fade-up" data-aos-delay="100">
-            <h3 class="title_skills"><b>Habilidades destacadas</b></h3>
+            <label class="title_skills"><b>Habilidades destacadas</b></label>
 
             <div class="my-3">
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-typescript text-primary"></i> Typescript
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -916,9 +928,9 @@
                 </div>
               </div>
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-angular text-danger"></i> Angular
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -934,9 +946,9 @@
                 </div>
               </div>
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-grid-alt text-primary"></i> Ionic
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -952,9 +964,9 @@
                 </div>
               </div>
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-nodejs text-success"></i> Node.js
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -971,9 +983,9 @@
               </div>
 
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-mongodb text-success"></i> MongoDB
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -990,9 +1002,9 @@
               </div>
 
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-html5 text-warning"></i> HTML /CSS
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -1009,9 +1021,9 @@
               </div>
 
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-docker text-info"></i> Docker
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -1028,9 +1040,9 @@
               </div>
 
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-github-original text-dark"></i> Git
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -1047,9 +1059,9 @@
               </div>
 
               <div class="skill">
-                <h6 class="title_skill">
+                <p class="title_skill text-bold">
                   <i class="lni lni-network"></i> Metodologías Ágiles / Scrum
-                </h6>
+                </p>
                 <div class="progress">
                   <div
                     class="progress-bar"
@@ -1093,7 +1105,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-10">
           <div class="section-title text-center pb-30">
-            <h3 class="title">Contacto</h3>
+            <label class="title">Contacto</label>
             <!-- <p class="text">Recibe asistencia personalizada</p> -->
           </div>
         </div>
@@ -1178,6 +1190,7 @@
               />
             </div>
           </div>
+          <br />
           <ul class="social text-center mt-60">
             <li>
               <a
@@ -1221,6 +1234,9 @@
           </li> -->
           </ul>
           <div class="copyright text-center mt-35">
+            <small class="text-primary"> Framework:&nbsp;{{ version }} </small>
+
+            <br />
             <p class="text pointer">
               2023 ©
               <span (click)="scrollPoint('top')" class="text-primary">
