@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'CubaNova';
+  public title = 'CubaNova';
+  public version = 'Angular ' + VERSION.full;
 
   constructor() {}
 
-  scrollPoint(section: string) {
-    // document.getElementById(section).scrollIntoView({behavior: "smooth"});
-    document.getElementById(section).scrollIntoView();
+  scrollPoint(section: string): void {
+    const doc = document.getElementById(section);
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
