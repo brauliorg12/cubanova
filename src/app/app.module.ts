@@ -8,15 +8,15 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule, routes } from './app-routing.module';
 
 // Modules Extra
-import { PagesModule } from './pages/pages.module';
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    PagesModule,
     RouterModule.forRoot(routes, {
       useHash: false,
       anchorScrolling: 'enabled',
