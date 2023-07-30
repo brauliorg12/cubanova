@@ -1,5 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+//  Components
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+
 export const routes: Routes = [
   {
     path: '',
@@ -8,8 +13,16 @@ export const routes: Routes = [
   },
   {
     path: 'page',
-    loadChildren: () =>
-      import('./pages/pages.module').then((m) => m.PagesModule),
+    children: [
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+    ],
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 
