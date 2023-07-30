@@ -1,0 +1,273 @@
+/* section-404 Page Not Found */
+@-webkit-keyframes rocket-movement {
+  100% {
+    -webkit-transform: translate(120px, -60px);
+    transform: translate(120px, -60px);
+  }
+}
+@keyframes rocket-movement {
+  100% {
+    -webkit-transform: translate(120px, -60px);
+    transform: translate(120px, -60px);
+  }
+}
+
+@-webkit-keyframes spin-earth {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transition: -webkit-transform 20s;
+    transition: -webkit-transform 20s;
+    transition: transform 20s;
+    transition: transform 20s, -webkit-transform 20s;
+  }
+}
+
+@keyframes spin-earth {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transition: -webkit-transform 20s;
+    transition: -webkit-transform 20s;
+    transition: transform 20s;
+    transition: transform 20s, -webkit-transform 20s;
+  }
+}
+
+@-webkit-keyframes move-astronaut {
+  100% {
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+}
+
+@keyframes move-astronaut {
+  100% {
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+}
+
+@-webkit-keyframes rotate-astronaut {
+  100% {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes rotate-astronaut {
+  100% {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+}
+
+@-webkit-keyframes glow-star {
+  40% {
+    opacity: 0.3;
+  }
+  90%,
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 999999px;
+  }
+}
+
+@keyframes glow-star {
+  40% {
+    opacity: 0.3;
+  }
+  90%,
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 999999px;
+  }
+}
+
+.bg-purple {
+  background: linear-gradient(#252525, #000);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-404 .btn-default:hover {
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-404 .text-404 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 10px 50px;
+  font-weight: 300;
+}
+
+.section-404 .central-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.section-404 .sub-text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.section-404 .objects img {
+  z-index: 90;
+  pointer-events: none;
+}
+
+.section-404 .object_rocket {
+  z-index: 95;
+  position: absolute;
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+  top: 75%;
+  pointer-events: none;
+  width: 150px;
+  -webkit-animation: rocket-movement 20s linear infinite both running;
+  animation: rocket-movement 20s linear infinite both running;
+}
+
+.section-404 .object_earth {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  z-index: 90;
+  width: 100px;
+}
+
+.section-404 .object_moon {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  width: 80px;
+}
+
+.section-404 .object_astronaut {
+  width: 170px;
+  -webkit-animation: rotate-astronaut 200s infinite linear both alternate;
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.section-404 .box_astronaut {
+  z-index: 110 !important;
+  position: absolute;
+  top: 60%;
+  right: 16%;
+  will-change: transform;
+  -webkit-animation: move-astronaut 5s infinite linear both alternate;
+  animation: move-astronaut 5s infinite linear both alternate;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .section-404 .object_earth {
+    top: 10% !important;
+    left: 15% !important;
+  }
+
+  .section-404 .object_moon {
+    top: 0% !important;
+    left: 35% !important;
+  }
+
+  .section-404 .object_rocket {
+    top: 85%;
+    width: 90px;
+  }
+
+  .section-404 .object_astronaut {
+    width: 100px !important;
+    top: 70% !important;
+    bottom: 10% !important;
+    right: 16% !important;
+  }
+
+  .section-404 .box_astronaut {
+    top: 80% !important;
+    right: 16% !important;
+  }
+}
+
+.section-404 .image-404 {
+  position: relative;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.section-404 .stars {
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left top;
+  height: 100vh;
+}
+
+.section-404 .text-inner {
+  font-size: calc(100px + (250 - 100) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 700;
+  margin-top: -52px;
+  line-height: 1;
+  color: #0067f4
+}
+
+.section-404 .glowing_stars .star {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #fff;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  will-change: opacity;
+}
+
+.section-404 .glowing_stars .star:nth-child(1) {
+  top: 80%;
+  left: 25%;
+  -webkit-animation: glow-star 2s infinite ease-in-out alternate 1s;
+  animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+
+.section-404 .glowing_stars .star:nth-child(2) {
+  top: 20%;
+  left: 40%;
+  -webkit-animation: glow-star 2s infinite ease-in-out alternate 3s;
+  animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+
+.section-404 .glowing_stars .star:nth-child(3) {
+  top: 25%;
+  left: 25%;
+  -webkit-animation: glow-star 2s infinite ease-in-out alternate 5s;
+  animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+
+.section-404 .glowing_stars .star:nth-child(4) {
+  top: 75%;
+  left: 80%;
+  -webkit-animation: glow-star 2s infinite ease-in-out alternate 7s;
+  animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+
+.section-404 .glowing_stars .star:nth-child(5) {
+  top: 90%;
+  left: 50%;
+  -webkit-animation: glow-star 2s infinite ease-in-out alternate 9s;
+  animation: glow-star 2s infinite ease-in-out alternate 9s;
+}

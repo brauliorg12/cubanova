@@ -1,0 +1,56 @@
+<!--section 404 start-->
+<div class="bg-purple">
+  <div class="section-404">
+    <div
+      class="stars"
+      [ngStyle]="{
+        'background-image': 'url(assets/images/404/overlay_stars.svg)'
+      }"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 col-12">
+            <div class="central-body">
+              <h1 class="text-inner">404</h1>
+              <h3 class="sub-text text-white">Página no encontrada</h3>
+              <p class="text-404 text-white text-center">
+                "La Página que estás intentando acceder no está disponible en
+                este momento. Esto podría ser debido a que la Página no existe o
+                ha sido eliminada."
+              </p>
+
+              <ul class="slider-btn rounded-buttons mt-2">
+                <li>
+                  <a
+                    class="main-btn rounded-two"
+                    [routerLink]="['/page/home']"
+                    title="Volver al Inicio"
+                    >Volver al Inicio</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="objects">
+      <img class="object_rocket" src="assets/images/404/rocket.svg" />
+      <div class="earth-moon">
+        <img class="object_earth" src="assets/images/404/earth.svg" />
+        <img class="object_moon" src="assets/images/404/moon.svg" />
+      </div>
+      <div class="box_astronaut">
+        <img class="object_astronaut" src="assets/images/404/astronaut.svg" />
+      </div>
+    </div>
+    <div class="glowing_stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+  </div>
+</div>
+<!--section 404 end-->
