@@ -1,5 +1,20 @@
 
 ng build --prod --aot
 
-# new
+# ========== New BUILD
 ng build --aot --build-optimizer --configuration production
+
+# ========== Para generar certificado con cualquier certbot incluso subdominio
+certbot certonly --manual --preferred-challenges dns -d cubanova.com
+
+- va a pedir que se realice un registro TXT en la Zona DNS, lo agregamos antes de darle continuar
+
+- pagina de zona dns: https://micuenta.donweb.com/es-ar/servicios/dominios/1002162/configurar/dns-zone
+
+- Luego convertimos los archivos PEM generados por certbot para poder leer correctamente la data con openssl
+openssl rsa -in /etc/letsencrypt/archive/cubanova.com/privkey1.pem -out /etc/letsencrypt/archive/cubanova.com/privkey1.key
+
+openssl x509 -in /etc/letsencrypt/archive/cubanova.com/cert1.pem -out /etc/letsencrypt/archive/cubanova.com/cert1.crt
+
+## subdominio
+openssl x509 -in /etc/letsencrypt/archive/app.cubanova.com/cert1.pem -out /etc/letsencrypt/archive/app.cubanova.com/cert1.crt
