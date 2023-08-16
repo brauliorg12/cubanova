@@ -9,16 +9,20 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/page/home',
+    redirectTo: '/',
   },
   {
-    path: 'page',
+    path: '',
     children: [
       {
-        path: 'home',
+        path: '',
         component: HomeComponent,
       },
     ],
+  },
+  {
+    path: 'page-not-found',
+    component: PageNotFoundComponent,
   },
   {
     path: '**',

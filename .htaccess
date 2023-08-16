@@ -75,3 +75,24 @@ RewriteRule ^ /index.html
   ExpiresByType application/pdf "access plus 1 year"
   ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
 </IfModule>
+
+
+
+#htaccess FABIAN
+<IfModule mod_rewrite.c>
+# That was ONLY to protect you from 500 errors
+# if your server did not have mod_rewrite enabled
+
+RewriteEngine On
+# RewriteBase /
+# NOT needed unless you're using mod_alias to redirect
+
+# Redireccionar el dominio principal a index.html
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# Direct all requests to /public folder
+RewriteCond %{REQUEST_URI} !/public
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
