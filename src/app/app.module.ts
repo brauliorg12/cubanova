@@ -4,8 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
 // Routing
-import { RouterModule } from '@angular/router';
-import { AppRoutingModule, routes } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 // Modules Extra
 import { HomeComponent } from './pages/home/home.component';
@@ -17,11 +16,6 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes, {
-      useHash: false,
-      anchorScrolling: 'enabled',
-      scrollPositionRestoration: 'enabled',
-    }),
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es-Ar' }],
   bootstrap: [AppComponent],
