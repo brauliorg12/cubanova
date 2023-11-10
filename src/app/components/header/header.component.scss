@@ -1,0 +1,175 @@
+@import '../../../assets/css/variables.scss';
+
+/*===========================
+    2.HEADER css 
+===========================*/
+.header-area {
+  position: relative;
+}
+.header-area .shape {
+  position: absolute;
+}
+.header-area .header-shape-one {
+  top: 0;
+  left: 0;
+}
+
+.header-area .header-shape-tow {
+  top: 25px;
+  left: 31%;
+}
+
+.header-area .header-shape-three {
+  left: 70px;
+  bottom: 130px;
+}
+
+.header-area .header-shape-fore {
+  left: 50%;
+  bottom: -200px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header-banner {
+  height: 700px;
+  background-image: url(../../../assets/images/banner/fondo6.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-banner .banner-image {
+  position: absolute;
+  right: 0;
+  width: 33%;
+  height: 100%;
+  top: 0;
+}
+
+.header-banner .banner-content {
+  position: relative;
+  z-index: 9;
+}
+.header-banner .banner-content .sub-title {
+  font-size: 24px;
+  color: $blanco;
+  text-transform: uppercase;
+}
+
+.header-banner .banner-content .banner-title {
+  font-size: 50px;
+}
+.header-banner .banner-content .banner-title span,
+.sub-home {
+  color: $blanco;
+}
+
+.header-banner .banner-content .banner-contact {
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+  color: $blanco;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+.header-banner .banner-content .banner-contact::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-color: $basic;
+  left: -70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .header-area .header-shape-one {
+    width: 180px;
+  }
+  .header-shape-one img {
+    width: 180px;
+    height: auto;
+  }
+  .header-area .header-shape-tow {
+    left: 60%;
+    width: 60px;
+  }
+  .header-shape-tow img {
+    width: 60px;
+    height: auto;
+  }
+  .header-area .header-shape-three {
+    width: 90px;
+    bottom: 200px;
+  }
+  .header-shape-three img {
+    width: 90px;
+    height: auto;
+  }
+  .header-area .header-shape-fore {
+    bottom: -60px;
+    width: 210px;
+  }
+
+  .header-shape-fore .animations {
+    width: 210px;
+    height: auto;
+  }
+  .header-banner {
+    height: 500px;
+  }
+  .header-banner .banner-image {
+    position: absolute;
+    right: 0;
+    bottom: 80px !important;
+    width: 65% !important;
+    top: auto !important;
+  }
+  .header-banner .banner-content .sub-title {
+    font-size: 18px;
+  }
+  .header-banner .banner-content .banner-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .header-banner .banner-content .banner-title {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area .header-shape-one {
+    width: 230px;
+  }
+  .header-shape-one img {
+    height: auto;
+  }
+  .header-area .header-shape-tow {
+    left: 40%;
+  }
+  .header-shape-tow img {
+    height: auto;
+  }
+  .header-banner {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .header-area .header-shape-fore {
+    width: 260px;
+    bottom: -75px;
+  }
+  .header-shape-fore .animations {
+    height: auto;
+  }
+}

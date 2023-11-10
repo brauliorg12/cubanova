@@ -1,4 +1,7 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+
+// Helpers
+import { activeItems } from 'src/app/helpers/active-items-nav.helper';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +9,8 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  public version = 'Angular ' + VERSION.full;
+  // Active classess
+  public currentSection!: string;
 
   constructor() {}
 
@@ -15,5 +19,15 @@ export class HomeComponent {
     if (doc) {
       doc.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  // Window Scroll Event
+  @HostListener('window:scroll', ['$event'])
+  onscroll() {
+    // Active Arrow Down
+    // this.arrowDown = scrollY > 500 ? false : true;
+
+    // Active Items NavBar
+    this.currentSection = activeItems();
   }
 }
