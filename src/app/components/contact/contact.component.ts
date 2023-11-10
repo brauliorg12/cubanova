@@ -4,6 +4,7 @@ import { stickyElement } from 'src/app/helpers/sticky-element.helper';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
   @Input() sectionId!: string;

@@ -1,0 +1,79 @@
+/*===========================
+      17.FEATURES css 
+===========================*/
+/*===== features TWO =====*/
+.features-area {
+  background-color: #f4f6f7;
+  padding-top: 80px;
+  padding-bottom: 180px;
+}
+
+.single-features {
+  padding: 40px 20px 52px;
+  background-color: #fff;
+  min-height: 284px;
+}
+.single-features .features-title-icon .features-title a {
+  font-size: 28px;
+  line-height: 45px;
+  color: #121212;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-weight: 400;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-features .features-title-icon .features-title a {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .single-features .features-title-icon .features-title a {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-features .features-title-icon .features-title a {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}
+.single-features .features-title-icon .features-title a:hover {
+  color: #0067f4;
+}
+.single-features .features-title-icon .features-icon {
+  position: relative;
+  display: inline-block;
+}
+.single-features .features-title-icon .features-icon i {
+  font-size: 88px;
+  line-height: 70px;
+  color: #0067f4;
+  position: relative;
+  z-index: 5;
+}
+.single-features .features-title-icon .features-icon .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.single-features .features-content .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #121212;
+  margin-top: 16px;
+}
+.single-features .features-content .features-btn {
+  color: #0067f4;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 29px;
+}
+
+.features-title {
+  font-size: 22px;
+}

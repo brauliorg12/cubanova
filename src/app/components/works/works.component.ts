@@ -28,4 +28,11 @@ export class WorksComponent {
       'portfolio' // Contacto
     );
   }
+
+  scrollPoint(section: string): void {
+    const doc = document.getElementById(section);
+    if (doc) {
+      doc.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
