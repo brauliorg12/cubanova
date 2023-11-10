@@ -1,0 +1,14 @@
+#sticky-element-filter {
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+#sticky-element-filter.sticky {
+  position: sticky;
+  top: 82px;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+}
