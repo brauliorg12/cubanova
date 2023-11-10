@@ -11,6 +11,11 @@ certbot certonly --manual --preferred-challenges dns -d cubanova.com
 
 - pagina de zona dns: https://micuenta.donweb.com/es-ar/servicios/dominios/1002162/configurar/dns-zone
 
+certbot: _acme-challenge.cubanova.com
+- qzQwqJeIq4MesJKtepuMwLifd9ZebSjqTRstAqkIqs
+- HAOUzyE84qgmpgeNvqsjOqmPP_HTA44STJ8F1ZbBPc0
+
+
 - Luego convertimos los archivos PEM generados por certbot para poder leer correctamente la data con openssl
 openssl rsa -in /etc/letsencrypt/archive/cubanova.com/privkey1.pem -out /etc/letsencrypt/archive/cubanova.com/privkey1.key
 
@@ -18,3 +23,81 @@ openssl x509 -in /etc/letsencrypt/archive/cubanova.com/cert1.pem -out /etc/letse
 
 ## subdominio
 openssl x509 -in /etc/letsencrypt/archive/app.cubanova.com/cert1.pem -out /etc/letsencrypt/archive/app.cubanova.com/cert1.crt
+
+
+
+*** RENOVAR
+
+Dado que inicialmente configuraste tus certificados utilizando el método manual con desafío DNS y realizaste algunas conversiones de archivos PEM con OpenSSL, puedes renovar tus certificados utilizando un enfoque similar. Sin embargo, debes recordar algunos pasos adicionales para la renovación.
+
+Para renovar tus certificados SSL, puedes seguir estos pasos:
+
+    Ejecuta el siguiente comando para renovar el certificado de dominio principal "cubanova.com" (asegúrate de ajustar el comando según tus rutas específicas y la configuración de tu servidor):
+
+    bash
+
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+certbot certonly --manual --preferred-challenges dns -d cubanova.com
+
+
+Elimina el certificado existente:
+Para eliminar un certificado existente, puedes usar el siguiente comando:
+
+bash
+
+certbot delete --cert-name cubanova.com
+
+Asegúrate de reemplazar "cubanova.com" con el nombre del certificado que deseas eliminar. Esto eliminará el certificado y todas sus configuraciones asociadas.
+
+Configura un nuevo certificado:
+Después de eliminar el certificado existente, puedes configurar un nuevo certificado utilizando el proceso que has usado anteriormente. Ejecuta el siguiente comando:
+
+bash
+
+certbot certonly --manual --preferred-challenges dns -d cubanova.com
+
+Este comando te guiará a través del proceso de configuración del certificado y te pedirá que realices el desafío DNS manual para completar la autenticación.
+
+Sigues el mismo proceso que realizaste inicialmente para agregar el registro TXT en la zona DNS.
+
+Luego, puedes renovar el certificado para el subdominio "app.cubanova.com" con un comando similar:
+
+bash
+
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+certbot certonly --manual --preferred-challenges dns -d app.cubanova.com
+
+Nuevamente, asegúrate de seguir el proceso para agregar el registro TXT en la zona DNS para el subdominio.
+
+Después de haber renovado los certificados, puedes volver a convertir los archivos PEM generados por Certbot utilizando OpenSSL para que sean legibles:
+
+bash
+
+openssl rsa -in /etc/letsencrypt/archive/cubanova.com/privkey1.pem -out /etc/letsencrypt/archive/cubanova.com/privkey1.key
+openssl x509 -in /etc/letsencrypt/archive/cubanova.com/cert1.pem -out /etc/letsencrypt/archive/cubanova.com/cert1.crt
+
+Y para el subdominio:
+
+bash
+
+    openssl x509 -in /etc/letsencrypt/archive/app.cubanova.com/cert1.pem -out /etc/letsencrypt/archive/app.cubanova.com/cert1.crt
+
+Estos pasos deben permitirte renovar tus certificados SSL de la misma manera en que los configuraste inicialmente. Asegúrate de ajustar las rutas y los nombres de los archivos según tu configuración específica. También, ten en cuenta que debes realizar estos pasos antes de que los certificados caduquen, ya que la renovación automática a menudo no funciona bien con desafíos DNS manuales.
+
+
+Mis disculpas por la omisión del subdominio "reparaciones.cubanova.com". Para renovar el certificado para ese subdominio, simplemente ejecuta el siguiente comando:
+
+bash
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+certbot certonly --manual --preferred-challenges dns -d reparaciones.cubanova.com
+
+Al igual que con los otros certificados, este comando te guiará a través del proceso de agregar el registro TXT en la zona DNS para completar la autenticación manual. Después de completar este proceso, el certificado para "reparaciones.cubanova.com" estará renovado.
+
+Luego, si deseas convertir los archivos PEM generados por Certbot para que sean legibles, puedes utilizar el mismo proceso que mencioné anteriormente:
+
+bash
+
+openssl rsa -in /etc/letsencrypt/archive/reparaciones.cubanova.com/privkey1.pem -out /etc/letsencrypt/archive/reparaciones.cubanova.com/privkey1.key
+openssl x509 -in /etc/letsencrypt/archive/reparaciones.cubanova.com/cert1.pem -out /etc/letsencrypt/archive/reparaciones.cubanova.com/cert1.crt
+
+Asegúrate de ajustar las rutas según la ubicación real de los archivos en tu servidor.

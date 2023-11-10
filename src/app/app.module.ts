@@ -6,17 +6,31 @@ import { AppComponent } from './app.component';
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
-// Modules Extra
-import { HomeComponent } from './pages/home/home.component';
+// Components
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavBarComponent } from './components/common/nav-bar/nav-bar.component';
+import { SliderHeaderComponent } from './components/slider-header/slider-header.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { WorksComponent } from './components/works/works.component';
+import { PortFolioComponent } from './components/portfolio/portfolio.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PageNotFoundComponent],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
+  declarations: [
+    AppComponent,
+    PageNotFoundComponent,
+    HomeComponent,
+    NavBarComponent,
+    SliderHeaderComponent,
+    FeaturesComponent,
+    WorksComponent,
+    PortFolioComponent,
+    ContactComponent,
+    FooterComponent,
   ],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [{ provide: LOCALE_ID, useValue: 'es-Ar' }],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,14 @@
+@media (max-width: 990px) {
+  .carousel-item .slider-image-box {
+    position: absolute;
+    top: 60vh;
+    right: 5%;
+    width: 50%;
+    height: 100%;
+    z-index: 9;
+  }
+}
+
+.carousel-item {
+  height: 100vh !important;
+}
