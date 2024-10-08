@@ -1,8 +1,11 @@
 
 ng build --prod --aot
 
-# ========== New BUILD
+# ========== Old BUILD
 ng build --aot --build-optimizer --configuration production
+
+# ========== New BUILD
+ng build --aot --configuration production
 
 # ========== Para generar certificado con cualquier certbot incluso subdominio
 certbot certonly --manual --preferred-challenges dns -d cubanova.com
